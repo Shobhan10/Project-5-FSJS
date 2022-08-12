@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --primary-color: #ba0cc5;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2) ),url(./assets/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 7%;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    font-family: var(--poppins);
+}
+
+.navbar div img {
+    margin-right: 4rem;
+}
+
+.navbar .logo {
+    width: 7rem;
+}
+
+
+.navbar .line {
+    border-right: 1px solid var(--white-color);
+    height: 47px;
+}
+
+.navbar .list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.list .list-item {
+    list-style: none;
+    font-size: 15px;
+    padding: 0 2rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.navbar .grow-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+
+.list .list-item:first-child::after {
+    content: ">";
+    margin-left: 5px;
+    font-size: 15px;
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.navbar .button-small {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 126px;
+    padding: 9px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* ------------------------------ */
+/* ---------- Hero ------------ */
+/* ------------------------------ */
+
+section .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0 19rem
+}
+
+.hero-heading {
+    color: var(--white-color);
+    font-family: var(--montserrat);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero-description {
+    color: var(--white-color);
+    font-family: var(--poppins);
+    text-align: center;
+    font-size: 24px;
+}
+
+.button-large {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--montserrat);
+    width: 234px;
+    font-size: 19px;
+    padding: 9px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;
+}
